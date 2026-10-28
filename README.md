@@ -35,7 +35,7 @@ Abra o endereço que o Vite mostrar (normalmente `http://localhost:5173`). Use *
 - Jornada fica em `users/{uid}/settings/work`.
 - A tela permite lançamento manual com data, etapa, horário e observação. Se já houver a etapa, o novo horário a substitui e aparece identificado como manual.
 - No histórico, cada dia tem a opção **Editar** para corrigir as horas registradas. O ajuste é identificado como manual e pode incluir uma observação.
-- A meta diária vem das horas contratadas por semana divididas por cinco dias úteis. A previsão automática mostra a saída estimada hoje, o saldo ao sair no horário habitual e o horário de entrada ou duração de almoço necessário para zerar esse saldo no dia seguinte. Considera apenas dias úteis com marcações, sem presumir dívida em dias sem registro.
+- A meta diária vem das horas contratadas por semana divididas por cinco dias úteis. A previsão usa o saldo acumulado do mês selecionado e mostra horários alternativos de entrada, saída e almoço para compensá-lo em um dia. O saldo mensal considera as datas com ao menos uma marcação; adicionar as marcações manuais dos dias que faltam recalcula a soma.
 - O navegador solicita localização ao bater ponto. Depois de permitir, normalmente lembra a autorização para aquele navegador e domínio; a permissão não é vinculada à conta Firebase.
 - O histórico exporta CSV que o Excel abre. O saldo soma dias com registros e compara o total trabalhado com a jornada diária prevista.
 
